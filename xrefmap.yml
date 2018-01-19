@@ -13,6 +13,9 @@ references:
 - uid: RevelDigital API/v1/ApiDevicesByIdCommandsPost
   name: ApiDevicesByIdCommandsPost
   href: restapi/swagger.html#RevelDigital_API_v1_ApiDevicesByIdCommandsPost
+- uid: RevelDigital API/v1/ApiDevicesByIdDelete
+  name: ApiDevicesByIdDelete
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiDevicesByIdDelete
 - uid: RevelDigital API/v1/ApiDevicesByIdGet
   name: ApiDevicesByIdGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiDevicesByIdGet
@@ -31,9 +34,18 @@ references:
 - uid: RevelDigital API/v1/ApiDevicesGet
   name: ApiDevicesGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiDevicesGet
+- uid: RevelDigital API/v1/ApiDevicesGroupsByIdDelete
+  name: ApiDevicesGroupsByIdDelete
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiDevicesGroupsByIdDelete
+- uid: RevelDigital API/v1/ApiDevicesGroupsByIdPut
+  name: ApiDevicesGroupsByIdPut
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiDevicesGroupsByIdPut
 - uid: RevelDigital API/v1/ApiDevicesGroupsGet
   name: ApiDevicesGroupsGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiDevicesGroupsGet
+- uid: RevelDigital API/v1/ApiDevicesGroupsPost
+  name: ApiDevicesGroupsPost
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiDevicesGroupsPost
 - uid: RevelDigital API/v1/ApiDevicesPingdataGet
   name: ApiDevicesPingdataGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiDevicesPingdataGet
@@ -43,6 +55,9 @@ references:
 - uid: RevelDigital API/v1/ApiMediaByGroup_idByFile_namePost
   name: ApiMediaByGroup_idByFile_namePost
   href: restapi/swagger.html#RevelDigital_API_v1_ApiMediaByGroup_idByFile_namePost
+- uid: RevelDigital API/v1/ApiMediaByIdDelete
+  name: ApiMediaByIdDelete
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiMediaByIdDelete
 - uid: RevelDigital API/v1/ApiMediaByIdGet
   name: ApiMediaByIdGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiMediaByIdGet
@@ -52,12 +67,24 @@ references:
 - uid: RevelDigital API/v1/ApiMediaGet
   name: ApiMediaGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiMediaGet
+- uid: RevelDigital API/v1/ApiMediaGroupsByIdDelete
+  name: ApiMediaGroupsByIdDelete
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiMediaGroupsByIdDelete
+- uid: RevelDigital API/v1/ApiMediaGroupsByIdPut
+  name: ApiMediaGroupsByIdPut
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiMediaGroupsByIdPut
 - uid: RevelDigital API/v1/ApiMediaGroupsGet
   name: ApiMediaGroupsGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiMediaGroupsGet
+- uid: RevelDigital API/v1/ApiMediaGroupsPost
+  name: ApiMediaGroupsPost
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiMediaGroupsPost
 - uid: RevelDigital API/v1/ApiMediaPost
   name: ApiMediaPost
   href: restapi/swagger.html#RevelDigital_API_v1_ApiMediaPost
+- uid: RevelDigital API/v1/ApiPlaylistsByIdDelete
+  name: ApiPlaylistsByIdDelete
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiPlaylistsByIdDelete
 - uid: RevelDigital API/v1/ApiPlaylistsByIdGet
   name: ApiPlaylistsByIdGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiPlaylistsByIdGet
@@ -67,9 +94,18 @@ references:
 - uid: RevelDigital API/v1/ApiPlaylistsGet
   name: ApiPlaylistsGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiPlaylistsGet
+- uid: RevelDigital API/v1/ApiPlaylistsGroupsByIdDelete
+  name: ApiPlaylistsGroupsByIdDelete
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiPlaylistsGroupsByIdDelete
+- uid: RevelDigital API/v1/ApiPlaylistsGroupsByIdPut
+  name: ApiPlaylistsGroupsByIdPut
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiPlaylistsGroupsByIdPut
 - uid: RevelDigital API/v1/ApiPlaylistsGroupsGet
   name: ApiPlaylistsGroupsGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiPlaylistsGroupsGet
+- uid: RevelDigital API/v1/ApiPlaylistsGroupsPost
+  name: ApiPlaylistsGroupsPost
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiPlaylistsGroupsPost
 - uid: RevelDigital API/v1/ApiReportAdhawkDevice-detailGet
   name: ApiReportAdhawkDevice-detailGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiReportAdhawkDevice_detailGet
@@ -97,24 +133,48 @@ references:
 - uid: RevelDigital API/v1/ApiReportExportByReport_nameGet
   name: ApiReportExportByReport_nameGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiReportExportByReport_nameGet
+- uid: RevelDigital API/v1/ApiSchedulesByIdDelete
+  name: ApiSchedulesByIdDelete
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiSchedulesByIdDelete
 - uid: RevelDigital API/v1/ApiSchedulesByIdGet
   name: ApiSchedulesByIdGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiSchedulesByIdGet
 - uid: RevelDigital API/v1/ApiSchedulesGet
   name: ApiSchedulesGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiSchedulesGet
+- uid: RevelDigital API/v1/ApiSchedulesGroupsByIdDelete
+  name: ApiSchedulesGroupsByIdDelete
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiSchedulesGroupsByIdDelete
+- uid: RevelDigital API/v1/ApiSchedulesGroupsByIdPut
+  name: ApiSchedulesGroupsByIdPut
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiSchedulesGroupsByIdPut
 - uid: RevelDigital API/v1/ApiSchedulesGroupsGet
   name: ApiSchedulesGroupsGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiSchedulesGroupsGet
+- uid: RevelDigital API/v1/ApiSchedulesGroupsPost
+  name: ApiSchedulesGroupsPost
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiSchedulesGroupsPost
+- uid: RevelDigital API/v1/ApiTemplatesByIdDelete
+  name: ApiTemplatesByIdDelete
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiTemplatesByIdDelete
 - uid: RevelDigital API/v1/ApiTemplatesByIdGet
   name: ApiTemplatesByIdGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiTemplatesByIdGet
 - uid: RevelDigital API/v1/ApiTemplatesGet
   name: ApiTemplatesGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiTemplatesGet
+- uid: RevelDigital API/v1/ApiTemplatesGroupsByIdDelete
+  name: ApiTemplatesGroupsByIdDelete
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiTemplatesGroupsByIdDelete
+- uid: RevelDigital API/v1/ApiTemplatesGroupsByIdPut
+  name: ApiTemplatesGroupsByIdPut
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiTemplatesGroupsByIdPut
 - uid: RevelDigital API/v1/ApiTemplatesGroupsGet
   name: ApiTemplatesGroupsGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiTemplatesGroupsGet
+- uid: RevelDigital API/v1/ApiTemplatesGroupsPost
+  name: ApiTemplatesGroupsPost
+  href: restapi/swagger.html#RevelDigital_API_v1_ApiTemplatesGroupsPost
 - uid: RevelDigital API/v1/ApiUsersByIdGet
   name: ApiUsersByIdGet
   href: restapi/swagger.html#RevelDigital_API_v1_ApiUsersByIdGet
