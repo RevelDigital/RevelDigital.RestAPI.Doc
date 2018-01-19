@@ -79,6 +79,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiAccountGet" data-uid="RevelDigital API/v1/ApiAccountGet" class="text-capitalize">ApiAccountGet</h3>
+  <div class="markdown level1 summary"><p>Gets account details.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/account[?api_key]</code></pre>
@@ -115,7 +117,7 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
-        <td><p>Success</p>
+        <td><p>Returns account details</p>
 </td>
         <td class="sample-response">
         </td>
@@ -132,6 +134,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiAccountPut" data-uid="RevelDigital API/v1/ApiAccountPut" class="text-capitalize">ApiAccountPut</h3>
+  <div class="markdown level1 summary"><p>Updates an account.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">PUT /api/account[?api_key]</code></pre>
@@ -174,14 +178,14 @@
       <tbody>
       <tr>
         <td><span class="status">201</span></td>
-        <td><p>Success</p>
+        <td><p>If account was updated successfully</p>
 </td>
         <td class="sample-response">
         </td>
       </tr>
       <tr>
         <td><span class="status">400</span></td>
-        <td><p>Bad Request</p>
+        <td><p>If the account API key is invalid</p>
 </td>
         <td class="sample-response">
         </td>
@@ -199,6 +203,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiDevicesGet" data-uid="RevelDigital API/v1/ApiDevicesGet" class="text-capitalize">ApiDevicesGet</h3>
+  <div class="markdown level1 summary"><p>Gets all devices in an account.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/devices?include_snap[&amp;api_key&amp;id&amp;take&amp;page&amp;device_type_id&amp;group_id&amp;group_name]</code></pre>
@@ -277,7 +283,7 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
-        <td><p>Success</p>
+        <td><p>Returns an array of devices</p>
 </td>
         <td class="sample-response">
         </td>
@@ -294,6 +300,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiDevicesPost" data-uid="RevelDigital API/v1/ApiDevicesPost" class="text-capitalize">ApiDevicesPost</h3>
+  <div class="markdown level1 summary"><p>Creates a device.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">POST /api/devices[?api_key&amp;activation_code]</code></pre>
@@ -342,14 +350,14 @@
       <tbody>
       <tr>
         <td><span class="status">201</span></td>
-        <td><p>Success</p>
+        <td><p>Returns the newly created device</p>
 </td>
         <td class="sample-response">
         </td>
       </tr>
       <tr>
         <td><span class="status">400</span></td>
-        <td><p>Bad Request</p>
+        <td><p>If the registration code is invalid</p>
 </td>
         <td class="sample-response">
         </td>
@@ -366,6 +374,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiDevicesByIdGet" data-uid="RevelDigital API/v1/ApiDevicesByIdGet" class="text-capitalize">ApiDevicesByIdGet</h3>
+  <div class="markdown level1 summary"><p>Gets a device by ID.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/devices/{id}[?api_key]</code></pre>
@@ -408,7 +418,7 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
-        <td><p>Success</p>
+        <td><p>Returns the device matching the ID</p>
 </td>
         <td class="sample-response">
         </td>
@@ -425,6 +435,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiDevicesByIdPut" data-uid="RevelDigital API/v1/ApiDevicesByIdPut" class="text-capitalize">ApiDevicesByIdPut</h3>
+  <div class="markdown level1 summary"><p>Updates a device.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">PUT /api/devices/{id}[?api_key]</code></pre>
@@ -473,6 +485,74 @@
       <tbody>
       <tr>
         <td><span class="status">201</span></td>
+        <td><p>If device was updated successfully</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>If the device ID is invalid</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiDevicesByIdDelete.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiDevicesByIdDelete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiDevicesByIdDelete" data-uid="RevelDigital API/v1/ApiDevicesByIdDelete" class="text-capitalize">ApiDevicesByIdDelete</h3>
+  <div class="markdown level1 summary"><p>Delete a device.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">DELETE /api/devices/{id}[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
         <td><p>Success</p>
 </td>
         <td class="sample-response">
@@ -497,6 +577,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiDevicesGroupsGet" data-uid="RevelDigital API/v1/ApiDevicesGroupsGet" class="text-capitalize">ApiDevicesGroupsGet</h3>
+  <div class="markdown level1 summary"><p>Gets device groups in the account.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/devices/groups[?api_key&amp;id&amp;take&amp;page]</code></pre>
@@ -551,7 +633,223 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
+        <td><p>Returns an array of device groups</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiDevicesGroupsPost.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiDevicesGroupsPost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiDevicesGroupsPost" data-uid="RevelDigital API/v1/ApiDevicesGroupsPost" class="text-capitalize">ApiDevicesGroupsPost</h3>
+  <div class="markdown level1 summary"><p>Create a new device group.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">POST /api/devices/groups[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+        <td></td>
+        <td><p>Device group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
+        <td><p>Returns the newly-created item</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>If the item is null</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiDevicesGroupsByIdPut.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiDevicesGroupsByIdPut%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiDevicesGroupsByIdPut" data-uid="RevelDigital API/v1/ApiDevicesGroupsByIdPut" class="text-capitalize">ApiDevicesGroupsByIdPut</h3>
+  <div class="markdown level1 summary"><p>Updates a device group.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">PUT /api/devices/groups/{id}[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td><p>API key</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>string</td>
+        <td></td>
+        <td><p>Group id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+        <td></td>
+        <td><p>Device group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
         <td><p>Success</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>Bad Request</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiDevicesGroupsByIdDelete.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiDevicesGroupsByIdDelete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiDevicesGroupsByIdDelete" data-uid="RevelDigital API/v1/ApiDevicesGroupsByIdDelete" class="text-capitalize">ApiDevicesGroupsByIdDelete</h3>
+  <div class="markdown level1 summary"><p>Delete a device group.</p>
+</div>
+  <div class="markdown level1 description"><p>Group must be empty.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">DELETE /api/devices/groups/{id}[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
+        <td><p>Success</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>Bad Request</p>
 </td>
         <td class="sample-response">
         </td>
@@ -568,6 +866,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiDevicesPingdataGet" data-uid="RevelDigital API/v1/ApiDevicesPingdataGet" class="text-capitalize">ApiDevicesPingdataGet</h3>
+  <div class="markdown level1 summary"><p>Gets device ping data by registration key.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/devices/pingdata[?key]</code></pre>
@@ -604,7 +904,7 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
-        <td><p>Success</p>
+        <td><p>Returns ping data for the device</p>
 </td>
         <td class="sample-response">
         </td>
@@ -621,6 +921,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiDevicesByRegistrationKeySnapGet" data-uid="RevelDigital API/v1/ApiDevicesByRegistrationKeySnapGet" class="text-capitalize">ApiDevicesByRegistrationKeySnapGet</h3>
+  <div class="markdown level1 summary"><p>Gets current snapshot of the device screen.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/devices/{registrationkey}/snap</code></pre>
@@ -657,7 +959,7 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
-        <td><p>Success</p>
+        <td><p>Returns snapshot</p>
 </td>
         <td class="sample-response">
         </td>
@@ -674,6 +976,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiDevicesByRegistrationKeyPingdataGet" data-uid="RevelDigital API/v1/ApiDevicesByRegistrationKeyPingdataGet" class="text-capitalize">ApiDevicesByRegistrationKeyPingdataGet</h3>
+  <div class="markdown level1 summary"><p>Gets device ping data by registration key.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/devices/{registrationkey}/pingdata</code></pre>
@@ -710,7 +1014,7 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
-        <td><p>Success</p>
+        <td><p>Returns ping data for the device</p>
 </td>
         <td class="sample-response">
         </td>
@@ -727,6 +1031,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiDevicesCommandsPost" data-uid="RevelDigital API/v1/ApiDevicesCommandsPost" class="text-capitalize">ApiDevicesCommandsPost</h3>
+  <div class="markdown level1 summary"><p>Sends a collection of commands to devices.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">POST /api/devices/commands[?api_key]</code></pre>
@@ -769,7 +1075,7 @@
       <tbody>
       <tr>
         <td><span class="status">201</span></td>
-        <td><p>Success</p>
+        <td><p>Commands delivered successfully</p>
 </td>
         <td class="sample-response">
         </td>
@@ -786,6 +1092,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiDevicesByIdCommandsPost" data-uid="RevelDigital API/v1/ApiDevicesByIdCommandsPost" class="text-capitalize">ApiDevicesByIdCommandsPost</h3>
+  <div class="markdown level1 summary"><p>Sends a collection of commands to a specific device.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">POST /api/devices/{id}/commands[?api_key]</code></pre>
@@ -834,7 +1142,7 @@
       <tbody>
       <tr>
         <td><span class="status">201</span></td>
-        <td><p>Success</p>
+        <td><p>Commands delivered successfully</p>
 </td>
         <td class="sample-response">
         </td>
@@ -852,6 +1160,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiMediaGet" data-uid="RevelDigital API/v1/ApiMediaGet" class="text-capitalize">ApiMediaGet</h3>
+  <div class="markdown level1 summary"><p>Gets all media in an account.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/media[?api_key&amp;id&amp;take&amp;page&amp;group_id&amp;group_name]</code></pre>
@@ -918,7 +1228,7 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
-        <td><p>Success</p>
+        <td><p>Returns an array of media</p>
 </td>
         <td class="sample-response">
         </td>
@@ -935,6 +1245,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiMediaPost" data-uid="RevelDigital API/v1/ApiMediaPost" class="text-capitalize">ApiMediaPost</h3>
+  <div class="markdown level1 summary"><p>Uploads new media</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">POST /api/media[?api_key&amp;group_id]</code></pre>
@@ -977,14 +1289,14 @@
       <tbody>
       <tr>
         <td><span class="status">201</span></td>
-        <td><p>Success</p>
+        <td><p>Returns the newly created media</p>
 </td>
         <td class="sample-response">
         </td>
       </tr>
       <tr>
         <td><span class="status">400</span></td>
-        <td><p>Bad Request</p>
+        <td><p>If the API key is invalid or upload was not supplied</p>
 </td>
         <td class="sample-response">
         </td>
@@ -1001,6 +1313,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiMediaByIdGet" data-uid="RevelDigital API/v1/ApiMediaByIdGet" class="text-capitalize">ApiMediaByIdGet</h3>
+  <div class="markdown level1 summary"><p>Gets media by ID.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/media/{id}[?api_key]</code></pre>
@@ -1043,7 +1357,7 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
-        <td><p>Success</p>
+        <td><p>Returns the media matching the ID</p>
 </td>
         <td class="sample-response">
         </td>
@@ -1126,12 +1440,82 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiMediaByIdDelete.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiMediaByIdDelete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiMediaByIdDelete" data-uid="RevelDigital API/v1/ApiMediaByIdDelete" class="text-capitalize">ApiMediaByIdDelete</h3>
+  <div class="markdown level1 summary"><p>Delete a device.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">DELETE /api/media/{id}[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
+        <td><p>Success</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>Bad Request</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiMediaGroupsGet.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiMediaGroupsGet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiMediaGroupsGet" data-uid="RevelDigital API/v1/ApiMediaGroupsGet" class="text-capitalize">ApiMediaGroupsGet</h3>
+  <div class="markdown level1 summary"><p>Gets media groups in the account.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/media/groups[?api_key&amp;id&amp;take&amp;page]</code></pre>
@@ -1186,7 +1570,223 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
+        <td><p>Returns an array of device groups</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiMediaGroupsPost.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiMediaGroupsPost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiMediaGroupsPost" data-uid="RevelDigital API/v1/ApiMediaGroupsPost" class="text-capitalize">ApiMediaGroupsPost</h3>
+  <div class="markdown level1 summary"><p>Create a new media group.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">POST /api/media/groups[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+        <td></td>
+        <td><p>Media group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
+        <td><p>Returns the newly-created item</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>If the item is null</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiMediaGroupsByIdPut.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiMediaGroupsByIdPut%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiMediaGroupsByIdPut" data-uid="RevelDigital API/v1/ApiMediaGroupsByIdPut" class="text-capitalize">ApiMediaGroupsByIdPut</h3>
+  <div class="markdown level1 summary"><p>Updates a media group.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">PUT /api/media/groups/{id}[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td><p>API key</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>string</td>
+        <td></td>
+        <td><p>Group id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+        <td></td>
+        <td><p>Device group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
         <td><p>Success</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>Bad Request</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiMediaGroupsByIdDelete.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiMediaGroupsByIdDelete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiMediaGroupsByIdDelete" data-uid="RevelDigital API/v1/ApiMediaGroupsByIdDelete" class="text-capitalize">ApiMediaGroupsByIdDelete</h3>
+  <div class="markdown level1 summary"><p>Delete a media group.</p>
+</div>
+  <div class="markdown level1 description"><p>Group must be empty.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">DELETE /api/media/groups/{id}[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
+        <td><p>Success</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>Bad Request</p>
 </td>
         <td class="sample-response">
         </td>
@@ -1203,6 +1803,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiMediaByGroup_idByFile_namePost" data-uid="RevelDigital API/v1/ApiMediaByGroup_idByFile_namePost" class="text-capitalize">ApiMediaByGroup_idByFile_namePost</h3>
+  <div class="markdown level1 summary"><p>Uploads new media</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">POST /api/media/{group_id}/{file_name}?shared[&amp;api_key&amp;start_date&amp;end_date&amp;advertiser_id&amp;name&amp;description]</code></pre>
@@ -1287,14 +1889,14 @@
       <tbody>
       <tr>
         <td><span class="status">201</span></td>
-        <td><p>Success</p>
+        <td><p>Returns the newly created media</p>
 </td>
         <td class="sample-response">
         </td>
       </tr>
       <tr>
         <td><span class="status">400</span></td>
-        <td><p>Bad Request</p>
+        <td><p>If the API key is invalid</p>
 </td>
         <td class="sample-response">
         </td>
@@ -1312,6 +1914,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiPlaylistsGet" data-uid="RevelDigital API/v1/ApiPlaylistsGet" class="text-capitalize">ApiPlaylistsGet</h3>
+  <div class="markdown level1 summary"><p>Gets all playlists in an account.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/playlists[?api_key&amp;id&amp;take&amp;page&amp;group_id&amp;group_name]</code></pre>
@@ -1378,7 +1982,7 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
-        <td><p>Success</p>
+        <td><p>Returns an array of playlists</p>
 </td>
         <td class="sample-response">
         </td>
@@ -1395,6 +1999,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiPlaylistsByIdGet" data-uid="RevelDigital API/v1/ApiPlaylistsByIdGet" class="text-capitalize">ApiPlaylistsByIdGet</h3>
+  <div class="markdown level1 summary"><p>Gets a playlist by ID.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/playlists/{id}[?api_key]</code></pre>
@@ -1437,7 +2043,7 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
-        <td><p>Success</p>
+        <td><p>Returns the playlist matching the ID</p>
 </td>
         <td class="sample-response">
         </td>
@@ -1520,12 +2126,82 @@
   
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiPlaylistsByIdDelete.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiPlaylistsByIdDelete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiPlaylistsByIdDelete" data-uid="RevelDigital API/v1/ApiPlaylistsByIdDelete" class="text-capitalize">ApiPlaylistsByIdDelete</h3>
+  <div class="markdown level1 summary"><p>Delete a playlist.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">DELETE /api/playlists/{id}[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
+        <td><p>Success</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>Bad Request</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiPlaylistsGroupsGet.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiPlaylistsGroupsGet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiPlaylistsGroupsGet" data-uid="RevelDigital API/v1/ApiPlaylistsGroupsGet" class="text-capitalize">ApiPlaylistsGroupsGet</h3>
+  <div class="markdown level1 summary"><p>Gets playlist groups in the account.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/playlists/groups[?api_key&amp;id&amp;take&amp;page]</code></pre>
@@ -1580,7 +2256,223 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
+        <td><p>Returns an array of playlist groups</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiPlaylistsGroupsPost.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiPlaylistsGroupsPost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiPlaylistsGroupsPost" data-uid="RevelDigital API/v1/ApiPlaylistsGroupsPost" class="text-capitalize">ApiPlaylistsGroupsPost</h3>
+  <div class="markdown level1 summary"><p>Create a new playlist group.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">POST /api/playlists/groups[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+        <td></td>
+        <td><p>Playlist group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
+        <td><p>Returns the newly-created item</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>If the item is null</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiPlaylistsGroupsByIdPut.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiPlaylistsGroupsByIdPut%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiPlaylistsGroupsByIdPut" data-uid="RevelDigital API/v1/ApiPlaylistsGroupsByIdPut" class="text-capitalize">ApiPlaylistsGroupsByIdPut</h3>
+  <div class="markdown level1 summary"><p>Updates a playlist group.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">PUT /api/playlists/groups/{id}[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td><p>API key</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>string</td>
+        <td></td>
+        <td><p>Group id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+        <td></td>
+        <td><p>Device group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
         <td><p>Success</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>Bad Request</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiPlaylistsGroupsByIdDelete.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiPlaylistsGroupsByIdDelete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiPlaylistsGroupsByIdDelete" data-uid="RevelDigital API/v1/ApiPlaylistsGroupsByIdDelete" class="text-capitalize">ApiPlaylistsGroupsByIdDelete</h3>
+  <div class="markdown level1 summary"><p>Delete a playlist group.</p>
+</div>
+  <div class="markdown level1 description"><p>Group must be empty.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">DELETE /api/playlists/groups/{id}[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
+        <td><p>Success</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>Bad Request</p>
 </td>
         <td class="sample-response">
         </td>
@@ -2460,6 +3352,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiSchedulesGet" data-uid="RevelDigital API/v1/ApiSchedulesGet" class="text-capitalize">ApiSchedulesGet</h3>
+  <div class="markdown level1 summary"><p>Gets all schedules in an account.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/schedules[?api_key&amp;id&amp;take&amp;page&amp;group_id&amp;group_name&amp;device_id]</code></pre>
@@ -2532,7 +3426,7 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
-        <td><p>Success</p>
+        <td><p>Returns an array of schedules</p>
 </td>
         <td class="sample-response">
         </td>
@@ -2549,6 +3443,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiSchedulesByIdGet" data-uid="RevelDigital API/v1/ApiSchedulesByIdGet" class="text-capitalize">ApiSchedulesByIdGet</h3>
+  <div class="markdown level1 summary"><p>Gets a schedule by ID.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/schedules/{id}[?api_key]</code></pre>
@@ -2591,7 +3487,75 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
+        <td><p>Returns the schedule matching the ID</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiSchedulesByIdDelete.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiSchedulesByIdDelete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiSchedulesByIdDelete" data-uid="RevelDigital API/v1/ApiSchedulesByIdDelete" class="text-capitalize">ApiSchedulesByIdDelete</h3>
+  <div class="markdown level1 summary"><p>Delete a schedule.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">DELETE /api/schedules/{id}[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
         <td><p>Success</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>Bad Request</p>
 </td>
         <td class="sample-response">
         </td>
@@ -2608,6 +3572,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiSchedulesGroupsGet" data-uid="RevelDigital API/v1/ApiSchedulesGroupsGet" class="text-capitalize">ApiSchedulesGroupsGet</h3>
+  <div class="markdown level1 summary"><p>Gets schedule groups in the account.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/schedules/groups[?api_key&amp;id&amp;take&amp;page]</code></pre>
@@ -2662,7 +3628,223 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
+        <td><p>Returns an array of playlist groups</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiSchedulesGroupsPost.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiSchedulesGroupsPost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiSchedulesGroupsPost" data-uid="RevelDigital API/v1/ApiSchedulesGroupsPost" class="text-capitalize">ApiSchedulesGroupsPost</h3>
+  <div class="markdown level1 summary"><p>Create a new schedule group.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">POST /api/schedules/groups[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+        <td></td>
+        <td><p>Schedule group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
+        <td><p>Returns the newly-created item</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>If the item is null</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiSchedulesGroupsByIdPut.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiSchedulesGroupsByIdPut%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiSchedulesGroupsByIdPut" data-uid="RevelDigital API/v1/ApiSchedulesGroupsByIdPut" class="text-capitalize">ApiSchedulesGroupsByIdPut</h3>
+  <div class="markdown level1 summary"><p>Updates a schedule group.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">PUT /api/schedules/groups/{id}[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td><p>API key</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>string</td>
+        <td></td>
+        <td><p>Group id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+        <td></td>
+        <td><p>Device group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
         <td><p>Success</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>Bad Request</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiSchedulesGroupsByIdDelete.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiSchedulesGroupsByIdDelete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiSchedulesGroupsByIdDelete" data-uid="RevelDigital API/v1/ApiSchedulesGroupsByIdDelete" class="text-capitalize">ApiSchedulesGroupsByIdDelete</h3>
+  <div class="markdown level1 summary"><p>Delete a schedule group.</p>
+</div>
+  <div class="markdown level1 description"><p>Group must be empty.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">DELETE /api/schedules/groups/{id}[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
+        <td><p>Success</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>Bad Request</p>
 </td>
         <td class="sample-response">
         </td>
@@ -2680,6 +3862,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiTemplatesGet" data-uid="RevelDigital API/v1/ApiTemplatesGet" class="text-capitalize">ApiTemplatesGet</h3>
+  <div class="markdown level1 summary"><p>Gets all templates in an account.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/templates[?api_key&amp;id&amp;take&amp;page&amp;group_id&amp;group_name]</code></pre>
@@ -2746,7 +3930,7 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
-        <td><p>Success</p>
+        <td><p>Returns an array of templates</p>
 </td>
         <td class="sample-response">
         </td>
@@ -2763,6 +3947,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiTemplatesByIdGet" data-uid="RevelDigital API/v1/ApiTemplatesByIdGet" class="text-capitalize">ApiTemplatesByIdGet</h3>
+  <div class="markdown level1 summary"><p>Gets a template by ID.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/templates/{id}[?api_key]</code></pre>
@@ -2805,7 +3991,75 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
+        <td><p>Returns the template matching the ID</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiTemplatesByIdDelete.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiTemplatesByIdDelete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiTemplatesByIdDelete" data-uid="RevelDigital API/v1/ApiTemplatesByIdDelete" class="text-capitalize">ApiTemplatesByIdDelete</h3>
+  <div class="markdown level1 summary"><p>Delete a template.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">DELETE /api/templates/{id}[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
         <td><p>Success</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>Bad Request</p>
 </td>
         <td class="sample-response">
         </td>
@@ -2822,6 +4076,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiTemplatesGroupsGet" data-uid="RevelDigital API/v1/ApiTemplatesGroupsGet" class="text-capitalize">ApiTemplatesGroupsGet</h3>
+  <div class="markdown level1 summary"><p>Gets template groups in the account.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/templates/groups[?api_key&amp;id&amp;take&amp;page]</code></pre>
@@ -2876,7 +4132,223 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
+        <td><p>Returns an array of playlist groups</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiTemplatesGroupsPost.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiTemplatesGroupsPost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiTemplatesGroupsPost" data-uid="RevelDigital API/v1/ApiTemplatesGroupsPost" class="text-capitalize">ApiTemplatesGroupsPost</h3>
+  <div class="markdown level1 summary"><p>Create a new template group.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">POST /api/templates/groups[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+        <td></td>
+        <td><p>Template group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
+        <td><p>Returns the newly-created item</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>If the item is null</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiTemplatesGroupsByIdPut.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiTemplatesGroupsByIdPut%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiTemplatesGroupsByIdPut" data-uid="RevelDigital API/v1/ApiTemplatesGroupsByIdPut" class="text-capitalize">ApiTemplatesGroupsByIdPut</h3>
+  <div class="markdown level1 summary"><p>Updates a template group.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">PUT /api/templates/groups/{id}[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td><p>API key</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>string</td>
+        <td></td>
+        <td><p>Group id</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">group</span></td>
+        <td></td>
+        <td></td>
+        <td><p>Device group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
         <td><p>Success</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>Bad Request</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/new/master/apiSpec/new?filename=RevelDigital_API_v1_ApiTemplatesGroupsByIdDelete.md&amp;value=---%0Auid%3A%20RevelDigital%20API%2Fv1%2FApiTemplatesGroupsByIdDelete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
+  </span>
+   <h3 id="RevelDigital_API_v1_ApiTemplatesGroupsByIdDelete" data-uid="RevelDigital API/v1/ApiTemplatesGroupsByIdDelete" class="text-capitalize">ApiTemplatesGroupsByIdDelete</h3>
+  <div class="markdown level1 summary"><p>Delete a template group.</p>
+</div>
+  <div class="markdown level1 description"><p>Group must be empty.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">DELETE /api/templates/groups/{id}[?api_key]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">api_key</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>string</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">201</span></td>
+        <td><p>Success</p>
+</td>
+        <td class="sample-response">
+        </td>
+      </tr>
+      <tr>
+        <td><span class="status">400</span></td>
+        <td><p>Bad Request</p>
 </td>
         <td class="sample-response">
         </td>
@@ -2894,6 +4366,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiUsersGet" data-uid="RevelDigital API/v1/ApiUsersGet" class="text-capitalize">ApiUsersGet</h3>
+  <div class="markdown level1 summary"><p>Gets all users in an account.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/users[?api_key&amp;id&amp;take&amp;page]</code></pre>
@@ -2948,7 +4422,7 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
-        <td><p>Success</p>
+        <td><p>Returns an array of users</p>
 </td>
         <td class="sample-response">
         </td>
@@ -2965,6 +4439,8 @@
     <a href="https://github.com/RevelDigital/RevelDigital.Core/blob/master/docs/restapi/swagger.json/#L1">View Source</a>
   </span>
    <h3 id="RevelDigital_API_v1_ApiUsersByIdGet" data-uid="RevelDigital API/v1/ApiUsersByIdGet" class="text-capitalize">ApiUsersByIdGet</h3>
+  <div class="markdown level1 summary"><p>Gets a user by ID.</p>
+</div>
   <h5>Request</h5>
   <div class="codewrapper">
     <pre><code class="lang-restApi hljs">GET /api/users/{id}[?api_key]</code></pre>
@@ -3007,7 +4483,7 @@
       <tbody>
       <tr>
         <td><span class="status">200</span></td>
-        <td><p>Success</p>
+        <td><p>Returns the user matching the ID</p>
 </td>
         <td class="sample-response">
         </td>
